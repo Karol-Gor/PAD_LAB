@@ -125,7 +125,11 @@ Napisz funkcję o nazwie unique_list, która pobiera listę i zwraca listę zawi
 """
 
 def unique_list (list_to_change):
-  return set (list_to_change)
+    unique_list = []
+    for x in list_to_change:
+        if x not in unique_list:
+            unique_list.append(x)
+    return unique_list
 
 my_list = [1,3,5,6,4,3,2,3,3,4,3,4,5,6,6,4,3,2,12,3,5,63,4,5,3,3,2]
 
