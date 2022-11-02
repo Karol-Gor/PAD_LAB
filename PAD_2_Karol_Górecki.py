@@ -14,9 +14,6 @@ import numpy as np
 
 data = pd.read_csv('president_heights.csv') 
 heights = np.array(data['height(cm)'])
-print(heights)
-
-print(heights) 
 
 mean_heights = np.mean(heights)
 standard_deviation = np.std(heights)
